@@ -1,15 +1,4 @@
-@font-face {
-font-family: "Raleway";
-src: url("http://findmatthew.com/style/../fonts/Raleway-Regular.ttf");
-}
-@font-face {
-font-family: "Raleway-semibold";
-src: url("http://findmatthew.com/style/../fonts/Raleway-SemiBold.ttf");
-}
-@font-face {
-font-family: "Raleway-bold";
-src: url("http://findmatthew.com/style/../fonts/Raleway-Bold.ttf");
-}
+
 @keyframes fadeIn {
 100% {
 opacity: 1;
@@ -719,40 +708,40 @@ background: #e31b6d;
 color: #fff;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
-background: url("/img/JCRES.png") center center/cover;
+background: url("img/JCRES.png") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
-background: url("/img/pursemock.jpg") center center/cover;
+background: url("img/pursemock.jpg") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
-background: url("/img/trees.jpg") center center/cover;
+background: url("img/trees.jpg") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(4) .card {
-background: url("/img/bnb.jpg") center center/cover;
+background: url("img/bnb.jpg") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
-background: url("/img/spooby.jpg") center center/cover;
+background: url("img/spooby.jpg") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(6) .card {
-background: url("/img/portfolio.jpg") center center/cover;
+background: url("img/portfolio.jpg") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(7) .card {
-background: url("/img/pong.jpg") center center/cover;
+background: url("img/pong.jpg") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(8) .card {
-background: url("/img/JCRES.png") center center/cover;
+background: url("img/JCRES.png") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(9) .card {
-background: url("/img/JCRES.png") center center/cover;
+background: url("img/JCRES.png") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(10) .card {
-background: url("/img/JCRES.png") center center/cover;
+background: url("img/JCRES.png") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(11) .card {
-background: url("/img/JCRES.png") center center/cover;
+background: url("img/JCRES.png") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(12) .card {
-background: url("/img/JCRES.png") center center/cover;
+background: url("img/JCRES.png") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix .card {
 height: 240px;
