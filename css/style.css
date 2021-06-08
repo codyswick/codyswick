@@ -137,7 +137,7 @@ overflow-x: hidden;
 }
 
 .canvas {
-background-image: url("img/filler.png") center center/cover;
+background-image: url("./img/filler.png") center center/cover;
 height: 100%;
 left: 0;
 position: absolute;
