@@ -1439,3 +1439,60 @@ nav .fa-bars{
   right: 5vw;
   top: 0;
 }
+
+
+
+
+
+
+.tile{
+  opacity: 0;
+
+}
+.tile.inView.fadeIn{
+  animation: fadeIn .6s ease-in-out both;
+}
+.tile.inView.slide-left {
+
+    animation: slide-in-left 1s ease-in-out both;
+}
+.tile.inView.slide-right {
+
+    animation: slide-in-right 1s ease-in-out both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+
+    opacity: 0;
+  }
+  100% {
+
+    opacity: 1;
+  }
+}
