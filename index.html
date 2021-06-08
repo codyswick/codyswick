@@ -1,463 +1,444 @@
 <!DOCTYPE html>
-<html>
-<title>Basic HTML Starter Template</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Web Template Grab Sections you need">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="Cody Swick">
+<html lang="en" dir="ltr">
 
-<!-- Raleway font -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 
-<!--Font Awesome-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- HOSTED -->
+  <style media="" data-href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800">/* cyrillic-ext */
 
-<!--local css-->
-<link rel="stylesheet" href="css/style.css">
+/*# sourceMappingURL=materialdesignicons.min.css.map */
 
-<body>
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
+</style>
 
 
-  <!-- Navbar (sit on top) -->
-  <div class="cs-top">
-    <div class="cs-bar cs-white cs-card" id="myNavbar">
-      <a href="#home" class="cs-bar-item cs-button cs-wide">LOGO</a>
-      <!-- Right-sided navbar links -->
-      <div class="cs-right cs-hide-small">
-        <a href="#about" class="cs-bar-item cs-button">ABOUT</a>
-        <a href="#team" class="cs-bar-item cs-button"><i class="fa fa-user"></i> TEAM</a>
-        <a href="#work" class="cs-bar-item cs-button"><i class="fa fa-th"></i> WORK</a>
-        <a href="#pricing" class="cs-bar-item cs-button"><i class="fa fa-usd"></i> PRICING</a>
-        <a href="#contact" class="cs-bar-item cs-button"><i class="fa fa-envelope"></i> CONTACT</a>
-      </div>
-      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 
-      <a href="javascript:void(0)" class="cs-bar-item cs-button cs-right cs-hide-large cs-hide-medium" onclick="cs_open()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-  </div>
+  <!-- HOSTED -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
 
-  <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="cs-sidebar cs-bar-block cs-black cs-card cs-animate-left cs-hide-medium cs-hide-large" style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="cs_close()" class="cs-bar-item cs-button cs-large cs-padding-16">Close ×</a>
-    <a href="#about" onclick="cs_close()" class="cs-bar-item cs-button">ABOUT</a>
-    <a href="#team" onclick="cs_close()" class="cs-bar-item cs-button">TEAM</a>
-    <a href="#work" onclick="cs_close()" class="cs-bar-item cs-button">WORK</a>
-    <a href="#pricing" onclick="cs_close()" class="cs-bar-item cs-button">PRICING</a>
-    <a href="#contact" onclick="cs_close()" class="cs-bar-item cs-button">CONTACT</a>
-  </nav>
-
-  <!-- Header with full-height image -->
-  <header class="bgimg-1 cs-display-container cs-grayscale-min" id="home">
-    <div class="cs-display-left cs-text-white" style="padding:48px">
-      <span class="cs-jumbo cs-hide-small">Start something that matters</span><br>
-      <span class="cs-xxlarge cs-hide-large cs-hide-medium">Start something that matters</span><br>
-      <span class="cs-large">Stop wasting valuable time with projects that just isn't you.</span>
-      <p><a href="#about" class="cs-button cs-white cs-padding-large cs-large cs-margin-top cs-opacity cs-hover-opacity-off">Learn more and start today</a></p>
-    </div>
-    <div class="cs-display-bottomleft cs-text-grey cs-large" style="padding:24px 48px">
-      <i class="fa fa-facebook-official cs-hover-opacity"></i>
-      <i class="fa fa-instagram cs-hover-opacity"></i>
-      <i class="fa fa-snapchat cs-hover-opacity"></i>
-      <i class="fa fa-pinterest-p cs-hover-opacity"></i>
-      <i class="fa fa-twitter cs-hover-opacity"></i>
-      <i class="fa fa-linkedin cs-hover-opacity"></i>
-    </div>
-  </header>
+  <!-- LOCAL -->
+  <script src="JS/pt.min.js"></script>
+  <script src="JS/index.js"></script>
+  <script src="JS/modal.js"></script>
 
 
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
+</head>
 
-  <!-- About Section -->
-
-  <div class="cs-container" style="padding:128px 16px" id="about">
-    <h3 class="cs-center">ABOUT THE COMPANY</h3>
-    <p class="cs-center cs-large">Key features of our company</p>
-    <div class="cs-row-padding cs-center" style="margin-top:64px">
-      <div class="cs-quarter">
-        <i class="fa fa-desktop cs-margin-bottom cs-jumbo cs-center"></i>
-        <p class="cs-large">Responsive</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      </div>
-      <div class="cs-quarter">
-        <i class="fa fa-heart cs-margin-bottom cs-jumbo"></i>
-        <p class="cs-large">Passion</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      </div>
-      <div class="cs-quarter">
-        <i class="fa fa-diamond cs-margin-bottom cs-jumbo"></i>
-        <p class="cs-large">Design</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      </div>
-      <div class="cs-quarter">
-        <i class="fa fa-cog cs-margin-bottom cs-jumbo"></i>
-        <p class="cs-large">Support</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+<body class="">
+  <div class="overflow-wrap">
+    <!-- HOME -->
+    <div class="modal-wrap flex">
+      <div class="mask"></div>
+      <div class="modal" id="modal" style="max-width: 1284px;">
+        <div class="carousel-wrap" style="width: 1284px;">
+          <div class="window">
+            <div id="carousel" style="left: -1284px;">
+              <div class="slide" style="width: 1284px;"></div>
+              <div class="slide" style="width: 1284px;"></div>
+              <div class="slide" style="width: 1284px;"></div>
+            </div>
+            <i class="mdi mdi-chevron-left" id="prev"></i>
+            <i class="mdi mdi-chevron-right" id="next"></i>
+          </div>
+        </div>
+        <div class="info-box">
+          <div class="title"></div>
+          <div class="tag"></div>
+          <div class="detail"></div>
+          <a href="#" target="_blank">
+            <div class="button">
+              <i class="fa fa-arrow-circle-right"></i>VIEW SITE
+            </div>
+          </a>
+        </div>
+        <i class="close mdi mdi-close"></i>
       </div>
     </div>
-  </div>
 
+    <section id="home" class="flex height-fix" style="height: 929px;">
+      <div id="pt" class="canvas"><canvas id="canvas" width="1930" height="1858" style="width: 965px; height:100rem;"></canvas></div>
+      <div class="flex">
+        <div class="text">
+          Hello, I'm <span class="highlight">Cody Swick</span>.
+          <br>
+          I'm a Front-End web developer.
+        </div>
 
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
+        <div class="button page-link" dest="about">
+          View my work <i class="fa fa-arrow-circle-right"></i>
+        </div>
 
-  <!-- Promo Section - "We know design" -->
+        <nav class="flex">
+            <div class="link-wrap">
+              <div class="page-link active" dest="home">home</div>
+              <div class="page-link" dest="about">about</div>
+              <div class="page-link" dest="portfolio">portfolio</div>
 
-
-  <div class="cs-container cs-light-grey" style="padding:128px 16px">
-    <div class="cs-row-padding">
-      <div class="cs-col m6">
-        <h3>We know design.</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
-        <p><a href="#work" class="cs-button cs-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+              <div class="page-link" dest="contact">contact</div>
+            </div>
+            <i class="fa fa-bars mdi-mdi-menu"></i>
+          </nav>
       </div>
-      <div class="cs-col m6">
-        <img class="cs-image cs-round-large" src="img/tree.jpg" alt="Buildings" width="700" height="394">
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container flex">
+        <div class="header waypoint tile slide-in-left" data-animation="slide-in-left">
+          ABOUT
+        </div>
+        <div class="header-bar waypoint tile slide-in-left" data-animation="slide-in-left" data-delay=".5s" style=""></div>
+
+        <div class="flex row label-wrap">
+          <div class="flex row-gt-sm">
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint tile flip-in-x" data-animation="flip-in-x">
+                <div class="hexagon">
+                  <i class="fa fa-fighter-jet"></i>
+                </div>
+              </div>
+              <div class="waypoint tile fade-in" data-animation="fade-in" data-delay=".2s" >
+                <div class="label bold">Fast</div>
+                <div>
+                  Fast load times and lag free interaction, my highest
+                  priority.
+                </div>
+              </div>
+            </div>
+
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint tile flip-in-x" data-animation="flip-in-x" data-delay=".2s" style="animation-delay: .2s;">
+                <div class="hexagon">
+                  <i class="fa fa-mobile"></i>
+                </div>
+              </div>
+              <div class="waypoint tile fade-in" data-animation="fade-in" data-delay=".2s" style="animation-delay: .2s;">
+                <div class="label bold">Responsive</div>
+                <div>My layouts will work on any device, big or small.</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex row-gt-sm">
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint tile flip-in-x" data-animation="flip-in-x" data-delay=".4s" style="animation-delay: .4s;">
+                <div class="hexagon">
+                  <i class="fa fa-lightbulb"></i>
+                </div>
+              </div>
+              <div class="waypoint tile fade-in" data-animation="fade-in" data-delay=".4s" style="animation-delay: .4s;">
+                <div class="label bold">Intuitive</div>
+                <div>Strong preference for easy to use, intuitive UX/UI.</div>
+              </div>
+            </div>
+
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint tile flip-in-x" data-animation="flip-in-x" data-delay=".6s" style="animation-delay: .6s;">
+                <div class="hexagon">
+                  <i class="fa fa-bolt"></i>
+                </div>
+              </div>
+              <div class="waypoint tile fade-in" data-animation="fade-in" data-delay=".6s" style="animation-delay: .6s;">
+                <div class="label bold">Dynamic</div>
+                <div>
+                  Websites don't have to be static, I love making pages come
+                  to life.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-wrapper flex row-gt-sm">
+          <div class="flex flex-50-gt-sm waypoint tile slide-in-left" data-animation="slide-in-left"data-delay=".5s" style="animation-delay: .5s;">
+            <img src="img/me.jpg" class="me">
+            <!-- <div><img class="up-arrow" src="img/up-arrow.png"></div> -->
+            <div class="label bold">Who's this guy?</div>
+            <div>
+              <p>Solution-driven professional excelling in a highly collaborative work environment, finding solutions to challenges and focused on the customer. Proven experience developing consumer- focused web sites using HTML, CSS, jQuery, PHP and JavaScript.</p>
+              <p>Building products for desktop, phone and mobile app users, meeting the highest standards for web design, user experience, best practices, usability and speed.</p>
+              <p> Responding to challenges by designing and developing solutions and building web applications aligned to the customer's services. Translating solutions into code and working across many different APIs, third-party integrations and databases. Check out my <a href="#portfolio"><span class="text-secondary">Work</span></a>, and <a href='files/Codyswickresumeonline.doc'><span class='text-secondary'>resume</a></p>
+            </div>
+          </div>
+
+          <div class="flex flex-50-gt-sm waypoint bars-wrap tile slide-in-right" data-animation="slide-in-right"data-delay=".5s" style="animation-delay: .5s;">
+            <h1></h1>
+            <div class="skillbar-wrapper">
+              <div class="skillbar clearfix html5" data-percent="90%">
+                <h4 class="skillbar-title"><span>HTML5</span></h4>
+                <div class="skillbar-bar"></div>
+                <div class="skill-bar-percent ">90%</div>
+              </div>
+
+              <div class="skillbar clearfix css" data-percent="90%">
+                <h4 class="skillbar-title"><span>CSS</span></h4>
+                <div class="skillbar-bar"></div>
+                <div class="skill-bar-percent">90%</div>
+              </div>
+
+              <div class="skillbar clearfix javascript" data-percent="60%">
+                <h4 class="skillbar-title"><span>JavaScript</span></h4>
+                <div class="skillbar-bar"></div>
+                <div class="skill-bar-percent">60%</div>
+              </div>
+
+              <div class="skillbar clearfix jquery" data-percent="40%">
+                <h4 class="skillbar-title"><span>jQuery</span></h4>
+                <div class="skillbar-bar"></div>
+                <div class="skill-bar-percent">40%</div>
+              </div>
+
+              <div class="skillbar clearfix php" data-percent="20%">
+                <h4 class="skillbar-title"><span>PHP</span></h4>
+                <div class="skillbar-bar"></div>
+                <div class="skill-bar-percent">20%</div>
+              </div>
+
+              <div class="skillbar clearfix wordpress" data-percent="20%">
+                <h4 class="skillbar-title"><span>WordPress</span></h4>
+                <div class="skillbar-bar"></div>
+                <div class="skill-bar-percent">20%</div>
+              </div>
+
+              <div class="skillbar clearfix server" data-percent="10%">
+                <h4 class="skillbar-title"><span>Server</span></h4>
+                <div class="skillbar-bar"></div>
+                <div class="skill-bar-percent">10%</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="flex" id="portfolio">
+      <div class="header waypoint tile slide-in-right" data-animation="slide-in-right" data-delay=".5s" style="animation-delay: .5s;">
+        PROJECTS
       </div>
-    </div>
-  </div>
+      <div class="header-bar waypoint tile slide-in-right" data-animation="slide-in-right" data-delay=".3s" style="animation-delay: .3s;"></div>
 
-
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-
-  <!-- Team Section -->
-  <div class="cs-container" style="padding:128px 16px" id="team">
-    <h3 class="cs-center">THE TEAM</h3>
-    <p class="cs-center cs-large">The ones who runs this company</p>
-    <div class="cs-row-padding cs-grayscale" style="margin-top:64px">
-      <div class="cs-col l3 m6 cs-margin-bottom">
-        <div class="cs-card">
-          <img src="img//team2.jpg" alt="John" style="width:100%">
-          <div class="cs-container">
-            <h3>John Doe</h3>
-            <p class="cs-opacity">CEO & Founder</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><button class="cs-button cs-light-grey cs-block"><i class="fa fa-envelope"></i> Contact</button></p>
+      <div class="filter-wrap waypoint tile fade-in" data-animation="fade-in" data-delay=".5s" style="animation-delay: .5s;">
+        <div class="flex row">
+          <div class="filter active" data-filter="all">ALL</div>
+          <div class="filter" data-filter=".rails">HTML/CSS no JS</div>
+          <div class="filter" data-filter=".react">REACT-JS</div>
+          <div class="filter" data-filter=".js">JAVASCRIPT</div>
+        </div>
+        <div class="float-bar" style="left: 25px; width: 112px;">
+          <div class="flex row" style="left: -25px;">
+            <div class="filter active" data-filter="all">ALL</div>
+            <div class="filter" data-filter=".rails">HTML/CSS no JS</div>
+            <div class="filter" data-filter=".react">REACT-JS</div>
+            <div class="filter" data-filter=".js">JAVASCRIPT</div>
           </div>
         </div>
       </div>
-      <div class="cs-col l3 m6 cs-margin-bottom">
-        <div class="cs-card">
-          <img src="img//team1.jpg" alt="Jane" style="width:100%">
-          <div class="cs-container">
-            <h3>Anja Doe</h3>
-            <p class="cs-opacity">Art Director</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><button class="cs-button cs-light-grey cs-block"><i class="fa fa-envelope"></i> Contact</button></p>
+
+      <div id="gallery" class="container flex row wrap tile">
+        <div class="mix js" data-my-order="1" style="display: inline-block;" data-bound="">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">JC Real Estate Solutions</div>
+              <span class="highlight">HTML5/ CSS3/ JS /Bootstrap5</span>
+            </div>
+            <a href="https://JCRES.hostman.site" target="_blank" class="btn-light button">
+              <i class="fas fa-eye"></i> Project
+            </a>
+            <a href="https://github.com/codyswick/JCRES" target="_blank" class="btn-dark button">
+              <i class="fab fa-github"></i> Github
+            </a>
           </div>
         </div>
-      </div>
-      <div class="cs-col l3 m6 cs-margin-bottom">
-        <div class="cs-card">
-          <img src="img//team3.jpg" alt="Mike" style="width:100%">
-          <div class="cs-container">
-            <h3>Mike Ross</h3>
-            <p class="cs-opacity">Web Designer</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><button class="cs-button cs-light-grey cs-block"><i class="fa fa-envelope"></i> Contact</button></p>
+
+        <div class="mix js" data-my-order="1" style="display: inline-block;" data-bound="">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Your Wife's Purse Store</div>
+              <span class="highlight">HTML5/ CSS3/ JS </span>
+            </div>
+            <a href="https://codyswick.github.io/ecomerce/" target="_blank" class="btn-light button">
+              <i class="fas fa-eye"></i> Project
+            </a>
+            <a href="https://github.com/codyswick/ecomerce" target="_blank" class="btn-dark button">
+              <i class="fab fa-github"></i> Github
+            </a>
           </div>
         </div>
-      </div>
-      <div class="cs-col l3 m6 cs-margin-bottom">
-        <div class="cs-card">
-          <img src="img//team2.jpg" alt="Dan" style="width:100%">
-          <div class="cs-container">
-            <h3>Dan Star</h3>
-            <p class="cs-opacity">Designer</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><button class="cs-button cs-light-grey cs-block"><i class="fa fa-envelope"></i> Contact</button></p>
+
+        <div class="mix js" data-my-order="1" style="display: inline-block;" data-bound="">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Trees Parallax</div>
+              <span class="highlight">HTML5/ CSS3/ JS</span>
+            </div>
+            <a href="https://codyswick.github.io/paralax-scroll/" target="_blank" class="btn-light button">
+              <i class="fas fa-eye"></i> Project
+            </a>
+            <a href="https://github.com/codyswick/paralax-scroll" target="_blank" class="btn-dark button">
+              <i class="fab fa-github"></i> Github
+            </a>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-
-  <!-- Promo Section "Statistics" -->
-  <div class="cs-container cs-row cs-center cs-dark-grey cs-padding-64">
-    <div class="cs-quarter">
-      <span class="cs-xxlarge">14+</span>
-      <br>Partners
-    </div>
-    <div class="cs-quarter">
-      <span class="cs-xxlarge">55+</span>
-      <br>Projects Done
-    </div>
-    <div class="cs-quarter">
-      <span class="cs-xxlarge">89+</span>
-      <br>Happy Clients
-    </div>
-    <div class="cs-quarter">
-      <span class="cs-xxlarge">150+</span>
-      <br>Meetings
-    </div>
-  </div>
-
-
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-
-  <!-- Work Section -->
-  <div class="cs-container" style="padding:128px 16px" id="work">
-    <h3 class="cs-center">OUR WORK</h3>
-    <p class="cs-center cs-large">What we've done for people</p>
-
-    <div class="cs-row-padding" style="margin-top:64px">
-      <div class="cs-col l3 m6">
-        <img src="img//stars.jpg" style="width:100%" onclick="onClick(this)" class="cs-hover-opacity" alt="A microphone">
-      </div>
-      <div class="cs-col l3 m6">
-        <img src="img//stars.jpg" style="width:100%" onclick="onClick(this)" class="cs-hover-opacity" alt="A phone">
-      </div>
-      <div class="cs-col l3 m6">
-        <img src="img//stars.jpg" style="width:100%" onclick="onClick(this)" class="cs-hover-opacity" alt="A drone">
-      </div>
-      <div class="cs-col l3 m6">
-        <img src="img//stars.jpg" style="width:100%" onclick="onClick(this)" class="cs-hover-opacity" alt="Soundbox">
-      </div>
-    </div>
-
-    <div class="cs-row-padding cs-section">
-      <div class="cs-col l3 m6">
-        <img src="img//stars.jpg" style="width:100%" onclick="onClick(this)" class="cs-hover-opacity" alt="A tablet">
-      </div>
-      <div class="cs-col l3 m6">
-        <img src="img//stars.jpg" style="width:100%" onclick="onClick(this)" class="cs-hover-opacity" alt="A camera">
-      </div>
-      <div class="cs-col l3 m6">
-        <img src="img//stars.jpg" style="width:100%" onclick="onClick(this)" class="cs-hover-opacity" alt="A typewriter">
-      </div>
-      <div class="cs-col l3 m6">
-        <img src="img//stars.jpg" style="width:100%" onclick="onClick(this)" class="cs-hover-opacity" alt="A tableturner">
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="cs-modal cs-black" onclick="this.style.display='none'">
-    <span class="cs-button cs-xxlarge cs-black cs-padding-large cs-display-topright" title="Close Modal Image">×</span>
-    <div class="cs-modal-content cs-animate-zoom cs-center cs-transparent cs-padding-64">
-      <img id="img01" class="cs-image">
-      <p id="caption" class="cs-opacity cs-large"></p>
-    </div>
-  </div>
-
-
-
-
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-
-  <!-- Skills Section -->
-  <div class="cs-container cs-light-grey cs-padding-64">
-    <div class="cs-row-padding">
-      <div class="cs-col m6">
-        <h3>Our Skills.</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-          tempor incididunt ut labore et dolore.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-          tempor incididunt ut labore et dolore.</p>
-      </div>
-      <div class="cs-col m6">
-        <p class="cs-wide"><i class="fa fa-camera cs-margin-right"></i>Photography</p>
-        <div class="cs-grey">
-          <div class="cs-container cs-dark-grey cs-center" style="width:90%">90%</div>
+        <div class="mix rails" data-my-order="1" style="display: inline-block;" data-bound="">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">B & B Water Wells</div>
+              <span class="highlight">HTML/ CSS3</span>
+            </div>
+            <a href="https://codyswick.github.io/bandbwaterwell/" target="_blank" class="btn-light button">
+              <i class="fas fa-eye"></i> Project
+            </a>
+            <a href="https://github.com/codyswick/bandbwaterwell" target="_blank" class="btn-dark button">
+              <i class="fab fa-github"></i> Github
+            </a>
+          </div>
         </div>
-        <p class="cs-wide"><i class="fa fa-desktop cs-margin-right"></i>Web Design</p>
-        <div class="cs-grey">
-          <div class="cs-container cs-dark-grey cs-center" style="width:85%">85%</div>
+
+        <div class="mix rails" data-my-order="1" style="display: inline-block;" data-bound="">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Spooby Music Store</div>
+              <span class="highlight">HTML5/ CSS3</span>
+            </div>
+            <a href="https://codyswick.github.io/spoobymusic/" target="_blank" class="btn-light button">
+              <i class="fas fa-eye"></i> Project
+            </a>
+            <a href="https://github.com/codyswick/spoobymusic" target="_blank" class="btn-dark button">
+              <i class="fab fa-github"></i> Github
+            </a>
+          </div>
         </div>
-        <p class="cs-wide"><i class="fa fa-photo cs-margin-right"></i>Photoshop</p>
-        <div class="cs-grey">
-          <div class="cs-container cs-dark-grey cs-center" style="width:75%">75%</div>
+
+        <div class="mix react" data-my-order="1" style="display: inline-block;" data-bound="">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Portfolio example</div>
+              <span class="highlight">HTML / React</span>
+            </div>
+            <a href="https://cody-swick.hostman.site" target="_blank" class="btn-light button">
+              <i class="fas fa-eye"></i> Project
+            </a>
+            <a href="https://github.com/codyswick/cody-swick" target="_blank" class="btn-dark button">
+              <i class="fab fa-github"></i> Github
+            </a>
+          </div>
         </div>
+
+        <div class="mix js" data-my-order="1" style="display: inline-block;" data-bound="">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Pong</div>
+              <span class="highlight">JavaScript</span>
+            </div>
+            <a href="https://codyswick.github.io/ES6-pong/" target="_blank" class="btn-light button">
+              <i class="fas fa-eye"></i> Project
+            </a>
+            <a href="https://github.com/codyswick/ES6-pong" target="_blank" class="btn-dark button">
+              <i class="fab fa-github"></i> Github
+            </a>
+          </div>
+        </div>
+
+
+
+
       </div>
-    </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+      <div class="container flex">
+        <div class="header waypoint tile slide-in-left" data-animation="slide-in-left"></div>
+
+
+        <div class="flex row wrap">
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+        <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+      </svg>
+      <div class="container flex">
+        <div class="header waypoint tile slide-in-left" data-animation="slide-in-left">
+          CONTACT
+        </div>
+        <div class="header-bar waypoint  "  data-delay=".25s" ></div>
+        <div class="highlight waypoint tile slide-in-right" >
+          Have a question or want to work together?
+        </div>
+        <form class="  section3" data-animation="" data-delay=".5s" id="contact-form" action="https://formspree.io/f/mleabqov"style="animation-delay: 0.5s;">
+          <input placeholder="Name" type="text" name="name" required="">
+          <input placeholder="Enter email" type="email" name="email" required="">
+          <textarea placeholder="Your Message" type="text" name="message"></textarea>
+          <div id="success">
+            <div>
+              Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span>
+            </div>
+          </div>
+          <input class="button" type="submit" id="submit" value="SUBMIT" >
+        </form>
+      </div>
+
+    </section>
+
+
+    <footer>
+        <i class=" mdi-chevron-double-up page-link fas fa-chevron-up" dest="home"></i>
+
+        <div class="icon-wrap flex row">
+          <a href="https://www.linkedin.com/in/cody-swick-70a62317a/">
+            <div class="flex icon" id="icon-2">
+              <i class="mdi mdi-linkedin fab fa-linkedin"></i>
+            </div>
+          </a>
+          <a href="https://www.facebook.com/SilentYetiGames/">
+            <div class="flex icon" id="icon-3">
+              <i class="di mdi-facebook fab fa-facebook"></i>
+            </div>
+          </a>
+          <a href="https://github.com/codyswick">
+            <div class="flex icon" id="icon-4">
+              <i class="mdi mdi-instagram fab fa-github"></i>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/channel/UCCjXgjBR7_S6KsDmy5hkHUg">
+            <div class="flex icon" id="icon-5">
+              <i class="mdi mdi-codepen fab fa-youtube"></i>
+            </div>
+          </a>
+        </div>
+        <div class="info-box">
+
+        </div>
+      </footer>
+
   </div>
 
 
 
 
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-
-  <!-- Pricing Section -->
-  <div class="cs-container cs-center cs-dark-grey" style="padding:128px 16px" id="pricing">
-    <h3>PRICING</h3>
-    <p class="cs-large">Choose a pricing plan that fits your needs.</p>
-    <div class="cs-row-padding" style="margin-top:64px">
-      <div class="cs-third cs-section">
-        <ul class="cs-ul cs-white cs-hover-shadow">
-          <li class="cs-black cs-xlarge cs-padding-32">Basic</li>
-          <li class="cs-padding-16"><b>10GB</b> Storage</li>
-          <li class="cs-padding-16"><b>10</b> Emails</li>
-          <li class="cs-padding-16"><b>10</b> Domains</li>
-          <li class="cs-padding-16"><b>Endless</b> Support</li>
-          <li class="cs-padding-16">
-            <h2 class="cs-wide">$ 10</h2>
-            <span class="cs-opacity">per month</span>
-          </li>
-          <li class="cs-light-grey cs-padding-24">
-            <button class="cs-button cs-black cs-padding-large">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-      <div class="cs-third">
-        <ul class="cs-ul cs-white cs-hover-shadow">
-          <li class="cs-red cs-xlarge cs-padding-48">Pro</li>
-          <li class="cs-padding-16"><b>25GB</b> Storage</li>
-          <li class="cs-padding-16"><b>25</b> Emails</li>
-          <li class="cs-padding-16"><b>25</b> Domains</li>
-          <li class="cs-padding-16"><b>Endless</b> Support</li>
-          <li class="cs-padding-16">
-            <h2 class="cs-wide">$ 25</h2>
-            <span class="cs-opacity">per month</span>
-          </li>
-          <li class="cs-light-grey cs-padding-24">
-            <button class="cs-button cs-black cs-padding-large">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-      <div class="cs-third cs-section">
-        <ul class="cs-ul cs-white cs-hover-shadow">
-          <li class="cs-black cs-xlarge cs-padding-32">Premium</li>
-          <li class="cs-padding-16"><b>50GB</b> Storage</li>
-          <li class="cs-padding-16"><b>50</b> Emails</li>
-          <li class="cs-padding-16"><b>50</b> Domains</li>
-          <li class="cs-padding-16"><b>Endless</b> Support</li>
-          <li class="cs-padding-16">
-            <h2 class="cs-wide">$ 50</h2>
-            <span class="cs-opacity">per month</span>
-          </li>
-          <li class="cs-light-grey cs-padding-24">
-            <button class="cs-button cs-black cs-padding-large">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
 
 
 
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
 
-  <!-- Contact Section -->
-  <div class="cs-container cs-light-grey" style="padding:128px 16px" id="contact">
-    <h3 class="cs-center">CONTACT</h3>
-    <p class="cs-center cs-large">Lets get in touch. Send us a message:</p>
-    <div style="margin-top:48px">
-      <p><i class="fa fa-map-marker fa-fw cs-xxlarge cs-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw cs-xxlarge cs-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw cs-xxlarge cs-margin-right"> </i> Email: mail@mail.com</p>
-      <br>
-      <form action="/action_page.php" target="_blank">
-        <p><input class="cs-input cs-border" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="cs-input cs-border" type="text" placeholder="Email" required name="Email"></p>
-        <p><input class="cs-input cs-border" type="text" placeholder="Subject" required name="Subject"></p>
-        <p><input class="cs-input cs-border" type="text" placeholder="Message" required name="Message"></p>
-        <p>
-          <button class="cs-button cs-black" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
-      </form>
-      <!-- Image of location/map -->
-      <img src="img//map.jpg" class="cs-image cs-greyscale" style="width:100%;margin-top:48px">
-    </div>
-  </div>
-
-
-
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-  <!---------------------------------------------------------------------------------------------------------------------------->
-
-  <!-- Footer -->
-  <footer class="cs-center cs-black cs-padding-64">
-    <a href="#home" class="cs-button cs-light-grey"><i class="fa fa-arrow-up cs-margin-right"></i>To the top</a>
-    <div class="cs-xlarge cs-section">
-      <i class="fa fa-facebook-official cs-hover-opacity"></i>
-      <i class="fa fa-instagram cs-hover-opacity"></i>
-      <i class="fa fa-snapchat cs-hover-opacity"></i>
-      <i class="fa fa-pinterest-p cs-hover-opacity"></i>
-      <i class="fa fa-twitter cs-hover-opacity"></i>
-      <i class="fa fa-linkedin cs-hover-opacity"></i>
-    </div>
-
-  </footer>
-
-  <script src="JS/scripts.js">
-
-  </script>
+  <script src="JS/canvas.js"></script>
 
 </body>
 
