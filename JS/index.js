@@ -278,7 +278,7 @@ function fadeIn() {
 }
 fadeIn();
 */
-const header = document.querySelector(".header")
+const header = document.querySelector(".headers")
 const sectionThree = document.querySelector(".section3");
 
 const faders =document.querySelectorAll(".fadeIn");
