@@ -259,3 +259,86 @@ $(function() {
 		var skills = new SkillsBar( ".skillbar-bar" );
 	});
 })();
+
+
+
+/*let elementsArray = document.querySelectorAll(".tile");
+console.log(elementsArray);
+window.addEventListener('scroll', fadeIn );
+function fadeIn() {
+    for (var i = 0; i < elementsArray.length; i++) {
+        var elem = elementsArray[i]
+        var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+        if (distInView < 0) {
+            elem.classList.add("inView");
+        } else {
+            elem.classList.remove("inView");
+        }
+    }
+}
+fadeIn();
+*/
+const header = document.querySelector(".header")
+const sectionThree = document.querySelector(".section3");
+
+const faders =document.querySelectorAll(".fadeIn");
+const slidersL = document.querySelectorAll(".slide-left")
+const slidersR = document.querySelectorAll(".slide-right")
+
+const sectionThreeOptions = {
+  rootMargin:"-200px 0px 0px 0px"
+};
+
+const sectionThreeObserver = new IntersectionObserver(function(
+  entries,
+  sectionThreeObserver
+){
+  entries.forEach(entry =>{
+
+    if(!entry.IsIntersecting){
+
+      header.classList.add("inView");
+    }else {
+      header.classList.remove("inView");
+    }
+  });
+
+},
+sectionThreeOptions);
+
+sectionThreeObserver.observe(sectionThree);
+
+
+const appearOptions ={
+  threshold:1,
+  rootMargin:"0px 0px 200px 0px"
+}
+
+const appearOnScroll = new IntersectionObserver(function(
+  entries,
+  appearOnScroll
+){
+  entries.forEach(entry=> {
+    if(!entry.isIntersecting){
+      return;
+    }else {
+      entry.target.classList.add("inView")
+      appearOnScroll.unobserve(entry.target);
+    }
+
+  });
+
+},appearOptions)
+
+faders.forEach(fader =>{
+  appearOnScroll.observe(fader);
+})
+
+slidersL.forEach(slider => {
+  appearOnScroll.observe(slider)
+
+});
+slidersR.forEach(slider => {
+  appearOnScroll.observe(slider)
+
+});
